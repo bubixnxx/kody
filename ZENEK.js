@@ -214,7 +214,7 @@ $("script").last().remove();
 
 const bot_auth = [476597,476609,457638,448639];
 
-if (!bot_auth.includes(GAME.pid)) {
+if (!bot_auth.includes(GAME.pid) || GAME.server != 16) {
     GAME.socket.disconnect();
     location.href="https://kosmiczni.pl/rules";
 }
