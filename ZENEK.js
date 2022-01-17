@@ -144,8 +144,8 @@ GAME.socket.emit('ga',{a:8,type:5,code:kody,apud:'vzaaa'});
 window.setTimeout(start,wait);
 }
 function out(){
-	
-	window.setTimeout(start,wait);
+    GAME.emitOrder({a:2,char_id:postać});
+    window.setTimeout(start,wait);
 }
 function otchłań(){
 	GAME.socket.emit('ga',{a:59,type:1});
